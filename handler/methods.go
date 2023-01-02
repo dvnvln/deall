@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/dvnvln/deallscrud/model"
-	"github.com/dvnvln/deallscrud/utils"
+	"github.com/dvnvln/deall/model"
+	"github.com/dvnvln/deall/utils"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"
 )

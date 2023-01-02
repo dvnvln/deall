@@ -3,7 +3,7 @@ package controller
 import (
 	"context"
 
-	"github.com/dvnvln/deallscrud/model"
+	"github.com/dvnvln/deall/model"
 )
 
 //go:generate mockgen -build_flags=-mod=mod -source=dependencies.go -package=todo -destination=dependencies.mock.test.go

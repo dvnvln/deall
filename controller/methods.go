@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/dvnvln/deallscrud/model"
-	"github.com/dvnvln/deallscrud/utils"
+	"github.com/dvnvln/deall/model"
+	"github.com/dvnvln/deall/utils"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

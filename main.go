@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"os"
 
-	userController "github.com/dvnvln/deallscrud/controller"
-	userHandler "github.com/dvnvln/deallscrud/handler"
-	userRepository "github.com/dvnvln/deallscrud/repository"
+	userController "github.com/dvnvln/deall/controller"
+	userHandler "github.com/dvnvln/deall/handler"
+	userRepository "github.com/dvnvln/deall/repository"
 )
 
 func main() {

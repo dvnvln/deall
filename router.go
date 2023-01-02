@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/dvnvln/deallscrud/handler"
-	jwtmid "github.com/dvnvln/deallscrud/middleware"
-	"github.com/dvnvln/deallscrud/utils"
+	"github.com/dvnvln/deall/handler"
+	jwtmid "github.com/dvnvln/deall/middleware"
+	"github.com/dvnvln/deall/utils"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/jwtauth/v5"
 )

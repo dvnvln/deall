@@ -1,4 +1,4 @@
-module github.com/dvnvln/deallscrud
+module github.com/dvnvln/deall
 
 go 1.19
 
