@@ -20,12 +20,13 @@ func main() {
 	if err != nil {
 		log.Fatal("Unable to start app")
 	}
-	port := "8000"
+	defer userRepo.Disconnect()
+	// port := "8000"
 
-	if fromEnv := os.Getenv("PORT"); fromEnv != "" {
-		port = fromEnv
-	}
-
+	// if fromEnv := os.Getenv("PORT"); fromEnv != "" {
+	// 	port = fromEnv
+	// }
+	port := os.Getenv("PORT")
 	log.Printf("Starting up on http://localhost:%s", port)
 
 	r := initRoute(userHnd)

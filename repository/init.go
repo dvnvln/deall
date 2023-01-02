@@ -1,6 +1,7 @@
 package repo
 
 import (
+	"context"
 	"log"
 
 	"go.mongodb.org/mongo-driver/mongo"
@@ -9,7 +10,7 @@ import (
 
 type Repository struct {
 	client *mongo.Client
-	dbName string
+	db     *mongo.Database
 }
 
 func New(dbUri string, dbName string) (*Repository, error) {
@@ -20,8 +21,14 @@ func New(dbUri string, dbName string) (*Repository, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	err = client.Connect(context.Background())
+	if err != nil {
+		return nil, err
+	}
+
 	return &Repository{
 		client: client,
-		dbName: dbName,
+		db:     client.Database(dbName),
 	}, nil
 }

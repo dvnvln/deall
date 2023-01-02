@@ -8,6 +8,7 @@ services:
       - DBNAME=dealls
       - DBURI=mongodb://intv:pwd@mongodb:27017
       - SECRET=8EB0883F-992A-466D-970F-DF2F1A052233
+      - PORT=8000
     ports:
       - 8000:8000
     depends_on:
